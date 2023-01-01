@@ -1,0 +1,148 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Mon Dec 19 08:33:18 2022
+| Host         : deniz-huawei running 64-bit Linux Mint 21
+| Command      : report_control_sets -verbose -file Processor_control_sets_placed.rpt
+| Design       : Processor
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    81 |
+| Unused register locations in slices containing registers |   355 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             117 |           59 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             136 |           62 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            5128 |         1342 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+-----------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|                    Clock Signal                    |                       Enable Signal                       |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------------------------------------+-----------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|  controlunit/AS_we_reg_i_1_n_0                     |                                                           |                                           |                1 |              1 |
+|  controlunit/load_from_switch_reg_i_1_n_0          |                                                           | controlunit/DM_we_reg_i_2_n_0             |                1 |              1 |
+|  controlunit/load_high_alu_low_reg_i_1_n_0         |                                                           | controlunit/DM_we_reg_i_2_n_0             |                1 |              1 |
+|  controlunit/DM_a_reg[3]_i_1_n_0                   |                                                           | controlunit/DM_we_reg_i_2_n_0             |                1 |              1 |
+|  controlunit/load_high_alu_low_reg_i_2_n_0         |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                1 |              1 |
+|  controlunit/AS_sort_reg_i_1_n_0                   |                                                           | controlunit/DM_we_reg_i_2_n_0             |                1 |              1 |
+|  controlunit/AS_sort_reg_i_2_n_0                   |                                                           |                                           |                1 |              1 |
+|  controlunit/RF_we_reg_i_1_n_0                     |                                                           | controlunit/DM_we_reg_i_2_n_0             |                1 |              1 |
+|  controlunit/adder_high_sorter_low_reg_i_1_n_0     |                                                           | controlunit/DM_we_reg_i_2_n_0             |                1 |              1 |
+|  controlunit/ex_reg_i_1_n_0                        |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                1 |              1 |
+|  controlunit/display_reg_i_1_n_0                   |                                                           | controlunit/DM_we_reg_i_2_n_0             |                1 |              1 |
+|  controlunit/adder_high_sorter_low_reg_i_1_n_0     |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                1 |              1 |
+|  controlunit/asc_high_des_low_reg_i_2_n_0          |                                                           |                                           |                1 |              1 |
+|  controlunit/adder_high_sorter_low_reg_i_2_n_0     |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                1 |              1 |
+|  controlunit/nextstate_reg[3]_i_2_n_0              |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                2 |              2 |
+|  controlunit/nextstate_reg[3]_i_2_n_0              |                                                           | controlunit/nextstate_reg[3]_i_3_n_0      |                2 |              2 |
+|  controlunit/countw_reg[2]_i_2_n_0                 |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                2 |              3 |
+|  controlunit/countd_reg[2]_i_2_n_0                 |                                                           |                                           |                2 |              3 |
+|  controlunit/AS_wa_reg[2]_i_2_n_0                  |                                                           |                                           |                2 |              3 |
+|  controlunit/AS_ra_reg[2]_i_2_n_0                  |                                                           |                                           |                2 |              3 |
+|  controlunit/RF_wa_reg[2]_i_2_n_0                  |                                                           |                                           |                2 |              3 |
+|  controlunit/RF_ra2_reg[2]_i_2_n_0                 |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                1 |              3 |
+|  controlunit/PC_reg[2]_i_2_n_0                     |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                1 |              3 |
+|  controlunit/AS_constant_reg[2]_i_2_n_0            |                                                           |                                           |                1 |              3 |
+|  controlunit/RF_ra1_reg[2]_i_2_n_0                 |                                                           | controlunit/load_high_alu_low_reg_i_3_n_0 |                1 |              3 |
+|  controlunit/cathodes[3][0]                        |                                                           |                                           |                1 |              4 |
+|  controlunit/DM_a_reg[3]_i_1_n_0                   |                                                           |                                           |                2 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[7][0]_30[0]                            | db1/SR[0]                                 |                2 |              4 |
+|  datapath/sorter/arr_reg[3][3]_i_2_n_0             |                                                           |                                           |                1 |              4 |
+|  datapath/sorter/arr_reg[5][3]_i_2_n_0             |                                                           |                                           |                1 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[5][0][0]                               | db1/SR[0]                                 |                3 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[6][0][0]                               | db1/SR[0]                                 |                2 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[3][0][0]                               | db1/SR[0]                                 |                2 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[2][3][0]                               | db1/SR[0]                                 |                2 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[1][0][0]                               | db1/SR[0]                                 |                2 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[0][3][0]                               | db1/SR[0]                                 |                2 |              4 |
+|  clk_state_BUFG                                    | controlunit/RF_reg[4][0][0]                               | db1/SR[0]                                 |                3 |              4 |
+|  controlunit/constant_reg[3]_i_2_n_0               |                                                           |                                           |                2 |              4 |
+|  controlunit/RF_reg[7][0]_14[0]                    |                                                           | db1/SR[0]                                 |                1 |              4 |
+|  controlunit/RF_reg[6][3]_7[0]                     |                                                           |                                           |                2 |              4 |
+|  controlunit/RF_reg[7][0]_6[0]                     |                                                           |                                           |                3 |              4 |
+|  controlunit/RF_reg[7][0]_5[0]                     |                                                           |                                           |                2 |              4 |
+|  controlunit/RF_reg[7][0]_29[0]                    |                                                           |                                           |                4 |              4 |
+|  controlunit/RF_reg[7][0]_28[0]                    |                                                           | db1/SR[0]                                 |                1 |              4 |
+|  controlunit/RF_reg[7][0]_27[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_26[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_24[0]                    |                                                           | db1/SR[0]                                 |                1 |              4 |
+|  controlunit/RF_reg[7][0]_23[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_25[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_22[0]                    |                                                           | db1/SR[0]                                 |                1 |              4 |
+|  controlunit/RF_reg[7][0]_21[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_19[0]                    |                                                           | db1/SR[0]                                 |                1 |              4 |
+|  controlunit/RF_reg[7][0]_18[0]                    |                                                           | db1/SR[0]                                 |                1 |              4 |
+|  controlunit/RF_reg[7][0]_20[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_17[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_16[0]                    |                                                           | db1/SR[0]                                 |                3 |              4 |
+|  controlunit/RF_reg[7][0]_15[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_3[0]                     |                                                           |                                           |                1 |              4 |
+|  controlunit/RF_reg[7][0]_13[0]                    |                                                           | db1/SR[0]                                 |                2 |              4 |
+|  controlunit/RF_reg[7][0]_1[0]                     |                                                           |                                           |                1 |              4 |
+|  controlunit/E[0]                                  |                                                           |                                           |                3 |              4 |
+|  controlunit/states_reg[3]_i_1_n_0                 |                                                           |                                           |                3 |              4 |
+|  sevensegmentdisplay/local_cathodes_reg[6]_i_2_n_0 |                                                           | controlunit/AS[0]                         |                3 |              7 |
+|  clk_state_BUFG                                    |                                                           | db1/SR[0]                                 |                4 |              7 |
+|  controlunit/RF_reg[7][0]                          |                                                           |                                           |                5 |             10 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions[2][11]_i_1_n_0 | db1/SR[0]                                 |                7 |             12 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions[3][11]_i_1_n_0 | db1/SR[0]                                 |                6 |             12 |
+|  controlunit/instruction_reg[11]_i_2_n_0           |                                                           |                                           |                4 |             12 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions[5][11]_i_1_n_0 | db1/SR[0]                                 |                6 |             12 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions[6][11]_i_1_n_0 | db1/SR[0]                                 |                4 |             12 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions[1][11]_i_1_n_0 | db1/SR[0]                                 |                7 |             12 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions                | db1/SR[0]                                 |                7 |             12 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions[4][11]_i_1_n_0 | db1/SR[0]                                 |                5 |             12 |
+|  clk_state_BUFG                                    | controlunit/instractionmemory/instructions[7][11]_i_1_n_0 | db1/SR[0]                                 |                6 |             12 |
+|  clk_IBUF_BUFG                                     |                                                           |                                           |               12 |             25 |
+|  clk_IBUF_BUFG                                     |                                                           | stateclockdivider/clk_out                 |                8 |             31 |
+|  clk_IBUF_BUFG                                     | db1/sel                                                   | db1/counter[0]_i_1_n_0                    |              253 |           1000 |
+|  clk_IBUF_BUFG                                     | db2/sel                                                   | db2/counter[0]_i_1__0_n_0                 |              260 |           1000 |
+|  clk_IBUF_BUFG                                     | db3/sel                                                   | db3/counter[0]_i_1__1_n_0                 |              253 |           1000 |
+|  clk_IBUF_BUFG                                     | db4/sel                                                   | db4/counter[0]_i_1__2_n_0                 |              258 |           1000 |
+|  clk_IBUF_BUFG                                     | db5/sel                                                   | db5/counter[0]_i_1__3_n_0                 |              252 |           1000 |
++----------------------------------------------------+-----------------------------------------------------------+-------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    14 |
+| 2      |                     2 |
+| 3      |                     9 |
+| 4      |                    37 |
+| 7      |                     2 |
+| 10     |                     1 |
+| 12     |                     9 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

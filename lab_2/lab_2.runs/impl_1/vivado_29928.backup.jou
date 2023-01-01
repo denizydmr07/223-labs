@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Oct 15 18:48:10 2022
+# Process ID: 29928
+# Current directory: /home/deniz/lab_2/lab_2.runs/impl_1
+# Command line: vivado -log Lab_Calculator_Structural.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab_Calculator_Structural.tcl -notrace
+# Log file: /home/deniz/lab_2/lab_2.runs/impl_1/Lab_Calculator_Structural.vdi
+# Journal file: /home/deniz/lab_2/lab_2.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Lab_Calculator_Structural.tcl -notrace

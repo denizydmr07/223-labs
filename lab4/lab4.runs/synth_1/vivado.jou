@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Nov 27 23:38:49 2022
+# Process ID: 39439
+# Current directory: /home/deniz/lab4/lab4.runs/synth_1
+# Command line: vivado -log TrafficLights.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TrafficLights.tcl
+# Log file: /home/deniz/lab4/lab4.runs/synth_1/TrafficLights.vds
+# Journal file: /home/deniz/lab4/lab4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source TrafficLights.tcl -notrace

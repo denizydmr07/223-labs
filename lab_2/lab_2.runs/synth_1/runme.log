@@ -1,0 +1,314 @@
+
+*** Running vivado
+    with args -log Lab_Calculator_Structural.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab_Calculator_Structural.tcl
+
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Lab_Calculator_Structural.tcl -notrace
+Command: synth_design -top Lab_Calculator_Structural -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2578 
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+WARNING: [Synth 8-2611] redeclaration of ansi port D is not allowed [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:26]
+WARNING: [Synth 8-976] D has already been declared [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:26]
+WARNING: [Synth 8-2654] second declaration of D ignored [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:26]
+INFO: [Synth 8-994] D is declared here [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:24]
+WARNING: [Synth 8-2611] redeclaration of ansi port Bo is not allowed [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:26]
+WARNING: [Synth 8-976] Bo has already been declared [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:26]
+WARNING: [Synth 8-2654] second declaration of Bo ignored [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:26]
+INFO: [Synth 8-994] Bo is declared here [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:24]
+WARNING: [Synth 8-2611] redeclaration of ansi port S is not allowed [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:25]
+WARNING: [Synth 8-976] S has already been declared [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:25]
+WARNING: [Synth 8-2654] second declaration of S ignored [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:25]
+INFO: [Synth 8-994] S is declared here [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:24]
+WARNING: [Synth 8-2611] redeclaration of ansi port C is not allowed [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:25]
+WARNING: [Synth 8-976] C has already been declared [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:25]
+WARNING: [Synth 8-2654] second declaration of C ignored [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:25]
+INFO: [Synth 8-994] C is declared here [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:24]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1038.273 ; gain = 132.312 ; free physical = 3150 ; free virtual = 7343
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Lab_Calculator_Structural' [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Lab_Calculator_Structural.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Half_Adder_Behavioral' [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Half_Adder_Behavioral' (1#1) [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Half_Subtractor_Behavioral' [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Half_Subtractor_Behavioral' (2#1) [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Lab_Calculator_Structural' (3#1) [/home/deniz/lab_2/lab_2.srcs/sources_1/new/Lab_Calculator_Structural.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1062.523 ; gain = 156.562 ; free physical = 3123 ; free virtual = 7318
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1062.523 ; gain = 156.562 ; free physical = 3123 ; free virtual = 7318
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc]
+WARNING: [Vivado 12-584] No ports matched 'A1'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A0'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B1'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B0'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Cin'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S0'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'S1'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Co'. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Two_Bit_Adder_Structural.xdc]
+Parsing XDC File [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Lab_Calculator_Structural.xdc]
+Finished Parsing XDC File [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Lab_Calculator_Structural.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/deniz/lab_2/lab_2.srcs/constrs_1/new/Lab_Calculator_Structural.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab_Calculator_Structural_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Lab_Calculator_Structural_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1328.180 ; gain = 0.000 ; free physical = 2920 ; free virtual = 7155
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.180 ; gain = 422.219 ; free physical = 2920 ; free virtual = 7154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.180 ; gain = 422.219 ; free physical = 2920 ; free virtual = 7154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.180 ; gain = 422.219 ; free physical = 2920 ; free virtual = 7154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.180 ; gain = 422.219 ; free physical = 2912 ; free virtual = 7147
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Lab_Calculator_Structural 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module Half_Adder_Behavioral 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Half_Subtractor_Behavioral 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.180 ; gain = 422.219 ; free physical = 2895 ; free virtual = 7131
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1328.180 ; gain = 422.219 ; free physical = 2849 ; free virtual = 7092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1328.180 ; gain = 422.219 ; free physical = 2849 ; free virtual = 7092
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     1|
+|2     |LUT4 |     1|
+|3     |IBUF |     4|
+|4     |OBUF |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     8|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.188 ; gain = 430.227 ; free physical = 2840 ; free virtual = 7083
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1336.188 ; gain = 84.477 ; free physical = 2839 ; free virtual = 7082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1336.195 ; gain = 430.234 ; free physical = 2839 ; free virtual = 7082
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 20 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1341.188 ; gain = 367.738 ; free physical = 2829 ; free virtual = 7075
+INFO: [Common 17-1381] The checkpoint '/home/deniz/lab_2/lab_2.runs/synth_1/Lab_Calculator_Structural.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1365.199 ; gain = 0.000 ; free physical = 2819 ; free virtual = 7066
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 28 14:14:10 2022...

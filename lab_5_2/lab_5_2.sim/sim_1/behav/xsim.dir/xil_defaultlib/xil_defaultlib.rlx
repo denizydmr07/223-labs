@@ -1,0 +1,14 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/deniz/lab_5_2/lab_5_2.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sim_1/new/SR8b_tb.sv,1670217859,systemVerilog,,,,SR8b_tb,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sim_1/new/TestBench.sv,1670177316,systemVerilog,,,,TestBench,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sources_1/new/Clock.sv,1669830649,systemVerilog,,,,Clock,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sources_1/new/DFF.sv,1669829172,systemVerilog,,,,DFF,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sources_1/new/FA.sv,1670079237,systemVerilog,,,,FA,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sources_1/new/MUX.sv,1670165023,systemVerilog,,,,MUX,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sources_1/new/SR8A.sv,1670170849,systemVerilog,,,,SR8A,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sources_1/new/SR8b.sv,1670184762,systemVerilog,,,,SR8b,,,,,,,,
+/home/deniz/lab_5_2/lab_5_2.srcs/sources_1/new/SR8bx2wA.sv,1670177485,systemVerilog,,,,SR8bx2wA,,,,,,,,

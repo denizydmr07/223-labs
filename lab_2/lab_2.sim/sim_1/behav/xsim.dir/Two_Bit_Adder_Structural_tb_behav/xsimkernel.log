@@ -1,0 +1,7 @@
+Running: xsim.dir/Two_Bit_Adder_Structural_tb_behav/xsimk -simmode gui -wdb Two_Bit_Adder_Structural_tb_behav.wdb -simrunnum 0 -socket 52841
+Design successfully loaded
+Design Loading Memory Usage: 39576 KB (Peak: 40236 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 121312 KB (Peak: 186848 KB)
+Simulation CPU Usage: 20 ms

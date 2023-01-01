@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../lab_3.srcs/sources_1/new/Behavioral_MUX2.sv"
+sv xil_defaultlib  "../../../lab_3.srcs/sources_1/new/Structural_MUX4.sv"
+sv xil_defaultlib  "../../../lab_3.srcs/sim_1/new/Structural_MUX4_tb.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

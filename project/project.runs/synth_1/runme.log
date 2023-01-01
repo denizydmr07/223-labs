@@ -1,0 +1,862 @@
+
+*** Running vivado
+    with args -log Processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Processor.tcl -notrace
+Command: synth_design -top Processor -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3762 
+awk: cmd. line:1: warning: command line argument `/etc/upstream-release' is a directory: skipped
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1029.059 ; gain = 123.094 ; free physical = 3316 ; free virtual = 7458
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Processor' [/home/deniz/project/project.srcs/sources_1/new/Processor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'StateClockDivider' [/home/deniz/project/project.srcs/sources_1/new/StateClockDivider.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'StateClockDivider' (1#1) [/home/deniz/project/project.srcs/sources_1/new/StateClockDivider.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [/home/deniz/project/project.srcs/sources_1/new/Debouncer.sv:22]
+	Parameter DEBOUNCE_COUNT bound to: 1000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [/home/deniz/project/project.srcs/sources_1/new/Debouncer.sv:22]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [/home/deniz/project/project.srcs/sources_1/new/InstructionMemory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [/home/deniz/project/project.srcs/sources_1/new/InstructionMemory.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:162]
+WARNING: [Synth 8-567] referenced signal 'instruction_md' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:100]
+WARNING: [Synth 8-567] referenced signal 'instruction_sd' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:100]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (4#1) [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [/home/deniz/project/project.srcs/sources_1/new/Datapath.sv:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile8x4' [/home/deniz/project/project.srcs/sources_1/new/RegisterFile8x4.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile8x4' (5#1) [/home/deniz/project/project.srcs/sources_1/new/RegisterFile8x4.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Mux2x1' [/home/deniz/project/project.srcs/sources_1/new/Mux2x1.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Mux2x1' (6#1) [/home/deniz/project/project.srcs/sources_1/new/Mux2x1.sv:23]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:23]
+WARNING: [Synth 8-567] referenced signal 'DM' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:42]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (7#1) [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Adder_4b' [/home/deniz/project/project.srcs/sources_1/new/Adder_4b.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Adder_4b' (8#1) [/home/deniz/project/project.srcs/sources_1/new/Adder_4b.sv:23]
+INFO: [Synth 8-638] synthesizing module 'AscendingSorter' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:23]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 13 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 13 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 13 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 13 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 13 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 14 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 14 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 14 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 14 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 14 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 8 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 9 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 10 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 11 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:59]
+WARNING: [Synth 8-324] index 12 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:60]
+WARNING: [Synth 8-324] index 13 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:54]
+WARNING: [Synth 8-324] index 13 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+WARNING: [Synth 8-324] index 3 out of range [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:58]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'AscendingSorter' (9#1) [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (10#1) [/home/deniz/project/project.srcs/sources_1/new/Datapath.sv:23]
+INFO: [Synth 8-638] synthesizing module 'SevenSegmentDisplay' [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:23]
+INFO: [Synth 8-226] default block is never used [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:47]
+WARNING: [Synth 8-567] referenced signal 'display_add_or_sub' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:44]
+WARNING: [Synth 8-567] referenced signal 'display_sorter' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:44]
+WARNING: [Synth 8-567] referenced signal 'RF_wd' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:44]
+WARNING: [Synth 8-567] referenced signal 'display' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:44]
+WARNING: [Synth 8-567] referenced signal 'RF_rd1' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:44]
+WARNING: [Synth 8-567] referenced signal 'RF_rd2' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:44]
+WARNING: [Synth 8-567] referenced signal 'AS_constant' should be on the sensitivity list [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:44]
+WARNING: [Synth 8-87] always_comb on 'local_cathodes_reg' did not result in combinational logic [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:84]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegmentDisplay' (11#1) [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:23]
+WARNING: [Synth 8-3848] Net PC in module/entity Processor does not have driver. [/home/deniz/project/project.srcs/sources_1/new/Processor.sv:41]
+INFO: [Synth 8-256] done synthesizing module 'Processor' (12#1) [/home/deniz/project/project.srcs/sources_1/new/Processor.sv:23]
+WARNING: [Synth 8-3331] design AscendingSorter has unconnected port AS_re
+WARNING: [Synth 8-3331] design AscendingSorter has unconnected port AS_constant[2]
+WARNING: [Synth 8-3331] design AscendingSorter has unconnected port AS_constant[1]
+WARNING: [Synth 8-3331] design AscendingSorter has unconnected port AS_constant[0]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port clk
+WARNING: [Synth 8-3331] design Processor has unconnected port PC[2]
+WARNING: [Synth 8-3331] design Processor has unconnected port PC[1]
+WARNING: [Synth 8-3331] design Processor has unconnected port PC[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1124.527 ; gain = 218.562 ; free physical = 3208 ; free virtual = 7352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1124.527 ; gain = 218.562 ; free physical = 3208 ; free virtual = 7351
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/deniz/project/project.srcs/constrs_1/new/Processor.xdc]
+Finished Parsing XDC File [/home/deniz/project/project.srcs/constrs_1/new/Processor.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/deniz/project/project.srcs/constrs_1/new/Processor.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Processor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Processor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1425.910 ; gain = 0.000 ; free physical = 3043 ; free virtual = 7183
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1425.910 ; gain = 519.945 ; free physical = 3031 ; free virtual = 7174
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1425.910 ; gain = 519.945 ; free physical = 3031 ; free virtual = 7174
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1425.910 ; gain = 519.945 ; free physical = 3031 ; free virtual = 7174
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "instructions_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instructions_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instructions_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instructions_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instructions_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instructions_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instructions_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instructions_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "countw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "countw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_re" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_ra1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sub_high_add_low" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "display_sorter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "asc_high_des_low" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AS_ra" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "arr_reg[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "arr_reg[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "arr_reg[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "arr_reg[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "minIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "maxIndex" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'load_high_alu_low_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:113]
+WARNING: [Synth 8-327] inferring latch for variable 'adder_high_sorter_low_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:114]
+WARNING: [Synth 8-327] inferring latch for variable 'sub_high_add_low_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:115]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_a_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:177]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_we_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:108]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_re_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:109]
+WARNING: [Synth 8-327] inferring latch for variable 'RF_we_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:107]
+WARNING: [Synth 8-327] inferring latch for variable 'RF_ra1_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'RF_ra2_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:111]
+WARNING: [Synth 8-327] inferring latch for variable 'RF_wa_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:112]
+WARNING: [Synth 8-327] inferring latch for variable 'asc_high_des_low_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:235]
+WARNING: [Synth 8-327] inferring latch for variable 'AS_sort_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:249]
+WARNING: [Synth 8-327] inferring latch for variable 'AS_we_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:246]
+WARNING: [Synth 8-327] inferring latch for variable 'AS_re_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:247]
+WARNING: [Synth 8-327] inferring latch for variable 'AS_wa_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:243]
+WARNING: [Synth 8-327] inferring latch for variable 'AS_ra_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:244]
+WARNING: [Synth 8-327] inferring latch for variable 'AS_constant_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:241]
+WARNING: [Synth 8-327] inferring latch for variable 'load_from_switch_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:121]
+WARNING: [Synth 8-327] inferring latch for variable 'display_add_or_sub_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:117]
+WARNING: [Synth 8-327] inferring latch for variable 'display_sorter_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:118]
+WARNING: [Synth 8-327] inferring latch for variable 'display_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:103]
+WARNING: [Synth 8-327] inferring latch for variable 'states_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:116]
+WARNING: [Synth 8-327] inferring latch for variable 'instruction_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:137]
+WARNING: [Synth 8-327] inferring latch for variable 'PC_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:72]
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:122]
+WARNING: [Synth 8-327] inferring latch for variable 'ex_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'constant_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:106]
+WARNING: [Synth 8-327] inferring latch for variable 'countw_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:104]
+WARNING: [Synth 8-327] inferring latch for variable 'countd_reg' [/home/deniz/project/project.srcs/sources_1/new/ControlUnit.sv:289]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_rd_reg' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:68]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[0]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[1]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[2]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[3]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[4]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[5]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[6]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[7]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[8]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[9]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[10]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[11]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[12]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[13]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[14]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DM_reg[15]' [/home/deniz/project/project.srcs/sources_1/new/DataMemory.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[0]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[1]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[2]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[3]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[4]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[5]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[6]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'arr_reg[7]' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'count_reg' [/home/deniz/project/project.srcs/sources_1/new/AscendingSorter.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'local_cathodes_reg' [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:84]
+WARNING: [Synth 8-327] inferring latch for variable 'currentdata_reg' [/home/deniz/project/project.srcs/sources_1/new/SevenSegmentDisplay.sv:50]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1425.910 ; gain = 519.945 ; free physical = 3030 ; free virtual = 7170
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Debouncer      |           5|      6017|
+|2     |Processor__GC0 |           1|     25968|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 10    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 8     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 89    
+	   2 Input     31 Bit        Muxes := 10    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 11    
+	   2 Input     28 Bit        Muxes := 12    
+	   2 Input     27 Bit        Muxes := 12    
+	   2 Input     26 Bit        Muxes := 12    
+	   2 Input     25 Bit        Muxes := 14    
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     23 Bit        Muxes := 14    
+	   2 Input     22 Bit        Muxes := 14    
+	   2 Input     21 Bit        Muxes := 15    
+	   2 Input     20 Bit        Muxes := 15    
+	   2 Input     19 Bit        Muxes := 15    
+	   2 Input     18 Bit        Muxes := 16    
+	   2 Input     17 Bit        Muxes := 16    
+	   2 Input     16 Bit        Muxes := 16    
+	   2 Input     15 Bit        Muxes := 16    
+	   2 Input     14 Bit        Muxes := 16    
+	   2 Input     13 Bit        Muxes := 16    
+	   2 Input     12 Bit        Muxes := 17    
+	   2 Input     11 Bit        Muxes := 16    
+	   2 Input     10 Bit        Muxes := 16    
+	   2 Input      9 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      7 Bit        Muxes := 16    
+	   2 Input      6 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 16    
+	   4 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1855  
+	  13 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	  22 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 990   
+	   5 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 4     
+	  31 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 11    
+	  26 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module StateClockDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 9     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	  22 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 76    
+	   5 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 11    
+	   6 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 4     
+	  31 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  26 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+Module RegisterFile8x4 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module Mux2x1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Mux2x1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module Mux2x1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Adder_4b 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+Module AscendingSorter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 88    
+	   2 Input     31 Bit        Muxes := 10    
+	   2 Input     30 Bit        Muxes := 10    
+	   2 Input     29 Bit        Muxes := 11    
+	   2 Input     28 Bit        Muxes := 12    
+	   2 Input     27 Bit        Muxes := 12    
+	   2 Input     26 Bit        Muxes := 12    
+	   2 Input     25 Bit        Muxes := 14    
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     23 Bit        Muxes := 14    
+	   2 Input     22 Bit        Muxes := 14    
+	   2 Input     21 Bit        Muxes := 15    
+	   2 Input     20 Bit        Muxes := 15    
+	   2 Input     19 Bit        Muxes := 15    
+	   2 Input     18 Bit        Muxes := 16    
+	   2 Input     17 Bit        Muxes := 16    
+	   2 Input     16 Bit        Muxes := 16    
+	   2 Input     15 Bit        Muxes := 16    
+	   2 Input     14 Bit        Muxes := 16    
+	   2 Input     13 Bit        Muxes := 16    
+	   2 Input     12 Bit        Muxes := 16    
+	   2 Input     11 Bit        Muxes := 16    
+	   2 Input     10 Bit        Muxes := 16    
+	   2 Input      9 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      7 Bit        Muxes := 16    
+	   2 Input      6 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 1848  
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 876   
+	   3 Input      1 Bit        Muxes := 10    
+Module Mux2x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module SevenSegmentDisplay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "arr_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "arr_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design Processor has unconnected port PC[2]
+WARNING: [Synth 8-3331] design Processor has unconnected port PC[1]
+WARNING: [Synth 8-3331] design Processor has unconnected port PC[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:19 . Memory (MB): peak = 1425.910 ; gain = 519.945 ; free physical = 2930 ; free virtual = 7090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Debouncer      |           5|      3007|
+|2     |Processor__GC0 |           1|      6052|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1425.910 ; gain = 519.945 ; free physical = 2930 ; free virtual = 7077
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 1433.918 ; gain = 527.953 ; free physical = 2919 ; free virtual = 7065
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Debouncer      |           5|      3007|
+|2     |Processor__GC0 |           1|      6052|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7010
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7009
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7009
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |  1731|
+|3     |LUT1   |  5095|
+|4     |LUT2   |   200|
+|5     |LUT3   |  2096|
+|6     |LUT4   |   227|
+|7     |LUT5   |   429|
+|8     |LUT6   |  1014|
+|9     |MUXF7  |    21|
+|10    |MUXF8  |     4|
+|11    |FDRE   |  5191|
+|12    |LD     |    92|
+|13    |LDC    |    88|
+|14    |LDP    |    10|
+|15    |IBUF   |    22|
+|16    |OBUF   |    18|
+|17    |OBUFT  |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+--------------------+------+
+|      |Instance              |Module              |Cells |
++------+----------------------+--------------------+------+
+|1     |top                   |                    | 16243|
+|2     |  controlunit         |ControlUnit         |   434|
+|3     |    instractionmemory |InstructionMemory   |   146|
+|4     |  datapath            |Datapath            |  2250|
+|5     |    datamemory        |DataMemory          |    97|
+|6     |    regfile           |RegisterFile8x4     |    70|
+|7     |    sorter            |AscendingSorter     |  2083|
+|8     |  db1                 |Debouncer           |  2673|
+|9     |  db2                 |Debouncer_0         |  2674|
+|10    |  db3                 |Debouncer_1         |  2673|
+|11    |  db4                 |Debouncer_2         |  2673|
+|12    |  db5                 |Debouncer_3         |  2674|
+|13    |  sevensegmentdisplay |SevenSegmentDisplay |    64|
+|14    |  stateclockdivider   |StateClockDivider   |    83|
++------+----------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1486.215 ; gain = 580.250 ; free physical = 2864 ; free virtual = 7009
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 60 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 1486.215 ; gain = 198.773 ; free physical = 2864 ; free virtual = 7009
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1486.223 ; gain = 580.258 ; free physical = 2864 ; free virtual = 7009
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1943 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 190 instances were transformed.
+  LD => LDCE: 92 instances
+  LDC => LDCE: 88 instances
+  LDP => LDPE: 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+215 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1486.223 ; gain = 512.770 ; free physical = 2864 ; free virtual = 7009
+INFO: [Common 17-1381] The checkpoint '/home/deniz/project/project.runs/synth_1/Processor.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1510.227 ; gain = 0.000 ; free physical = 2855 ; free virtual = 7002
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 19 08:31:19 2022...

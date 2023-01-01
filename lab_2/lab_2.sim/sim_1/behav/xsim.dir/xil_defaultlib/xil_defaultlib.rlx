@@ -1,0 +1,13 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/deniz/lab_2/lab_2.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sim_1/new/Half_Adder_Behavioral_tb.sv,1665841642,systemVerilog,,,,Half_Adder_Behavioral_tb,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sim_1/new/Lab_Calculator_Structural_tb.sv,1665848052,systemVerilog,,,,Lab_Calculator_Structural_tb,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sim_1/new/Two_Bit_Adder_Structural_tb.sv,1665843937,systemVerilog,,,,Two_Bit_Adder_Structural_tb,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sources_1/new/Full_Adder_Structural.sv,1665842505,systemVerilog,,,,Full_Adder_Structural,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Adder_Behavioral.sv,1665841494,systemVerilog,,,,Half_Adder_Behavioral,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sources_1/new/Half_Subtractor_Behavioral.sv,1665841543,systemVerilog,,,,Half_Subtractor_Behavioral,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sources_1/new/Lab_Calculator_Structural.sv,1665848199,systemVerilog,,,,Lab_Calculator_Structural,,,,,,,,
+/home/deniz/lab_2/lab_2.srcs/sources_1/new/Two_Bit_Adder_Structural.sv,1665843303,systemVerilog,,,,Two_Bit_Adder_Structural,,,,,,,,
